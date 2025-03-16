@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import "tailwindcss";
+@plugin "daisyui";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-primary: #2d3250;
+  --color-secondary: ;
+  --color-accent: ;
+
+  --color-white: rgb(248, 248, 248);
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
+  /* @apply transition-colors duration-300; */
+  /* transition: all 0.2s; */
+}
+
+body {
+  min-height: 100vh;
+  /* background-color: rgb(224, 237, 255); */
+  background-image: url("/images/bg.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  isolation: isolate;
+}
+
+body::after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  inset: 0;
+  /* background: radial-gradient(
+    circle,
+    rgba(224, 237, 255, 0.9) 0%,
+    rgba(224, 237, 255, 1) 100%
+  ); */
+  background: rgba(224, 237, 255, 0.9);
+}
+
+body.dark::after {
+  background: rgba(20, 23, 35, 0.9);
+}
