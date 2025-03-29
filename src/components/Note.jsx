@@ -13,7 +13,7 @@ const Note = ({
 
   return (
     <Link to={`/message/${id}`}>
-      <div className="notebook-page h-full flex flex-col max-w-[500px] mx-auto relative rounded-lg pb-14 dark:bg-gray-800 bg-white shadow duration-300">
+      <div className="notebook-page min-h-96 flex flex-col max-w-[500px] mx-auto relative rounded-lg pb-14 dark:bg-gray-800 bg-white shadow duration-300">
         {/* header  */}
         <div className="note-header border-b border-gray-300 dark:border-gray-800 pt-4 bg-gray-500/5 dark:bg-indigo-200/5 rounded-t-lg px-4 flex items-center pb-3">
           <div
