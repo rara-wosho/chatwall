@@ -4,14 +4,6 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
-@theme {
-  --color-primary: #2d3250;
-  --color-secondary: ;
-  --color-accent: ;
-
-  --color-white: rgb(248, 248, 248);
-}
-
 * {
   font-family: "Montserrat", sans-serif;
   /* @apply transition-colors duration-300; */
