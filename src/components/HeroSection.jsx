@@ -13,7 +13,6 @@ const HeroSection = ({ colView, setColView }) => {
         and free from judgment. Release confessions, stories, or just a random
         thought you've kept locked away.
       </p>
-      {/* <Scrollingbadges /> */}
 
       <div className="action-btns flex items-center gap-2 justify-center pb-4 pt-6">
         <button className="btn btn-outline border-gray-600 hover:bg-gray-700 text-gray-700 dark:text-gray-200  px-4 md:px-8 hover:text-white rounded-lg">
